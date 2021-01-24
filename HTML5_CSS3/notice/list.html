@@ -2,6 +2,22 @@
 <html lang="en">
 <head>
     <title>Document</title>
+
+    <!--스타일 선언시 그룹은 맨 앞에 . 을 입력한다-->
+    <!--ID는 유일성을 충족해야 한다, 맨 앞에 #을 입력해야 한다-->
+    <style>
+        /* .group1{
+            color: red;
+            font-weight: bold;
+        } */
+
+        #name1{
+            color: seagreen;
+            font-weight: bold;
+        }
+        
+    </style>
+
 </head>
 <body>
     <h1><a href="../index.html">뉴렉처 온라인</a></h1>
@@ -9,12 +25,12 @@
 
     <header>
         <section>
-            <h1>서두</h1>
+            <h1 class="group1" id="name1">서두</h1>
 
             <nav>
                 <h1>메인메뉴</h1>
                 <ul>
-                    <li><a href="">학습가이드</a></li>
+                    <li><a href="" class="group1" id="name2">학습가이드</a></li>
                     <li><a href="">강좌선택</a></li>
                     <li><a href="">AnswerIs</a></li>
                 </ul>
