@@ -5,17 +5,41 @@
 
     <!--스타일 선언시 그룹은 맨 앞에 . 을 입력한다-->
     <!--ID는 유일성을 충족해야 한다, 맨 앞에 #을 입력해야 한다-->
+    <!--일반 태그는 아무것도 붙이지 않는다, 해당하는 모든 태그에 영향이 간다-->
     <style>
         /* .group1{
             color: red;
             font-weight: bold;
         } */
 
-        #name1{
+        /* #name1{
             color: seagreen;
             font-weight: bold;
-        }
+        } */
+
+        /* #main-menu>h1+ul{
+            font-size: 20px;
+        } */
         
+        /* #main-menu>ul{
+            font-size: 20px;
+        } */
+
+        /* #main-menu>ul li{
+            font-size: 20px;
+        } */
+
+        /* #main-menu li.first{
+            font-size: 20px;
+        } */
+
+        /* #main-menu>ul>li.first+.third{
+            font-size: 20px;
+        } */
+
+        #main-menu>ul>li.first~.third{
+            font-size: 20px;
+        }
     </style>
 
 </head>
@@ -25,14 +49,14 @@
 
     <header>
         <section>
-            <h1 class="group1" id="name1">서두</h1>
+            <h1>서두</h1>
 
-            <nav>
+            <nav id="main-menu">
                 <h1>메인메뉴</h1>
                 <ul>
-                    <li><a href="" class="group1" id="name2">학습가이드</a></li>
-                    <li><a href="">강좌선택</a></li>
-                    <li><a href="">AnswerIs</a></li>
+                    <li class="first"><a href="">학습가이드</a></li>
+                    <li class="second"><a href="">강좌선택</a></li>
+                    <li class="third"><a href="">AnswerIs</a></li>
                 </ul>
             </nav>
     <!--<ul>은 순서가 없는 목록, <ol>은 순서가 있는 목록, <dl>은 <dt>(용어) <dd>(용어설명)이 있다.-->
