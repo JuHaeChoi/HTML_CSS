@@ -1,19 +1,20 @@
 @import url(css/reset.css);
 
+#header{
+    height: 70px;
+    background: beige;
+    position: sticky;
+    width: 100%;
+    top: 0px;
+}
+
 #s1 ul{
     background: yellow;
-    width: 500px;
-    height: 300px;
-    position: relative;
-    left: 50px;
-    top: 50px;
+
 }
 
 #s1 li:nth-child(1){
     background: red;
-    position: relative;
-    left: 50px;
-    top: 30px;
 
 }
 
