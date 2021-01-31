@@ -1,4 +1,4 @@
-# HTML_CSS_Javascript
+# HTML_CSS
 
 Study for : HTML5, CSS3, Javascript
 
